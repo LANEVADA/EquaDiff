@@ -46,7 +46,7 @@ def test_latex_installation():
         if os.path.exists('test_report.pdf'):
             print("✅ LaTeX编译成功！PDF文件已生成")
             # 清理测试文件
-            for ext in ['.tex', '.log', '.aux']:
+            for ext in ['.tex', '.pdf', '.log', '.aux']:
                 if os.path.exists(f'test_report{ext}'):
                     os.remove(f'test_report{ext}')
             return True
